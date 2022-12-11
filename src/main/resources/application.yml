@@ -1,0 +1,19 @@
+server:
+  port: 8089
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: admin
+
+    jpa:
+      show-sql: true
+      database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+      hibernate:
+        ddl-auto: drop-create
+
+    jwt:
+      secret: 5agwergp0weg703utjio3njc234rypnc998t7bhn3634056jvg03594vnt035tn938457v
+
